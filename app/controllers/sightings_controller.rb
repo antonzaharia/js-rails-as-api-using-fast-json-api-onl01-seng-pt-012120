@@ -6,7 +6,7 @@ class SightingsController < ApplicationController
 
   def index
     sightings = Sighting.all
-    render json: SightingSerializer.new(sightings)
+    render json: SightingSerializer.new(sightings, options)
   end
 
 end
